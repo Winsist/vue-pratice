@@ -1,26 +1,26 @@
 <template>
   <div id="app">
     {{num}}
-    <div @click="btn1">button1</div>
-    <div @click="btn2">button2</div>
-    <router-view/>
+    <div @click="add1">+1</div>
+    <div @click="add2">+2</div>
+    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
   data(){
     return {
       num:0
     }
   },
-  method:{
-    btn1(){
+  methods:{
+    add1(){
       this.num++;
-      // console.log(id)
+
+      console.log(111)
     },
-    btn2(i){
+    add2(i){
       this.num=this.num+2;
       // console.log(id)
     },
