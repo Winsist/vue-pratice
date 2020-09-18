@@ -44,19 +44,13 @@ export default {
             }
         }
     },
-    computed: {},
-    activated: function() {
-    },
     methods: {
         onClickBack() {
             if (this.leftOptions.preventGoBack) {
                 this.leftOptions.callback();
             } else {
-                this.$store.commit('UPDATE_DIRECTION', 'reverse'); //返回效果
+                // this.$store.commit('UPDATE_DIRECTION', 'reverse'); //返回效果
                 history.back()
-                window.isBackNative = setTimeout(() => {
-                    window.wvObject.backNative()
-                }, 320)
             }
         },
         onClickRight(e) {

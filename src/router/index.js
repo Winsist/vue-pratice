@@ -1,12 +1,33 @@
 /*出口文件*/ 
-import Vue from 'vue'
-import Router from 'vue-router'
-// import Base from './base' //路由模块
+// import Vue from 'vue'
+// import Router from 'vue-router'
+import Home from './home' //路由模块
+import Base from './base' //路由模块
+import Dad from './dad' //路由模块
 
-Vue.use(Router)
+// Vue.use(Router)
 
-export default new Router({
-  routes: [
-    // Base
-  ]
-})
+// export default new Router({
+//   routes: [
+//     {
+//       path:"/",
+//       component:Home
+//     },
+//     Base
+//   ]
+// })
+
+function mergeArray() {
+  let newArray = [];
+  for (let i = 0; i < arguments.length; i++) {
+      let sArray = arguments[i]
+      for (let j = 0; j < sArray.length; j++) {         
+          newArray.push(sArray[j]);
+      }
+  }
+  console.log(arguments);
+  console.log(newArray);
+  return newArray
+}
+
+export default mergeArray(Dad,Base,Home) //名字依次添加在最前面

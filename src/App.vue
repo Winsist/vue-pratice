@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div @click="add1">+1</div>
+    <!-- <div @click="add1">+1</div>
     <div @click="add2">+2</div>
     <div @click="add3(333,$event)">+3</div>
     <div>{{test}}</div>
@@ -9,14 +9,15 @@
         {{val}}~{{key}}~{{index}}
       </li>
     </ul>
-    <div @click.left="mouse">点我的鼠标左键触发事件</div>
+    <div @click.left="mouse">点我的鼠标左键触发事件</div> -->
 
     <!-- <input type="checkbox" id="checkbox" checked> -->
 <!-- <label for="checkbox">{{ checked }}</label> -->
 
-  <input v-model.lazy="msg">{{msg}}
+  <!-- <input v-model.lazy="msg">{{msg}}
   <div></div>
-  <input v-model.number="txt" type="number">{{txt}}
+  <input v-model.number="txt" type="number">{{txt}} -->
+  
 
     <router-view />
   </div>
@@ -24,6 +25,7 @@
 
 <script>
 export default {
+  name: 'App',
   data(){
     return {
       num:3,
