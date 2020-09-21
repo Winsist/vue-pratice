@@ -5,6 +5,7 @@
     </header>
     <Son />
     <Girl /> 
+    <div @click="goHome">去home组件</div>
   </div>
 </template>
 
@@ -19,7 +20,36 @@ export default {
         
     },
 
- 
+  beforeCreate(){
+    console.log('dad beforeCreate');
+  },
+  created(){
+    console.log('dad created');
+  },
+  beforeMount(){
+    console.log('dad beforeMount');
+
+  },
+  mounted(){
+    console.log('dad mounted');
+
+  },
+  beforeUpdate(){
+    console.log('dad beforeUpdate');
+
+  },
+  updated(){
+    console.log('dad updated');
+
+  },
+  beforeDestroy(){
+    console.log('dad beforeDestroy');
+
+  },
+  destroyed(){
+    console.log('dad destroyed');
+
+  },
   data(){
     return {
         
@@ -30,6 +60,9 @@ export default {
   
   
   methods:{
+    goHome(){
+      this.$router.push('/home')
+    }
     
   }
 }

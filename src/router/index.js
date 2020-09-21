@@ -2,8 +2,10 @@
 // import Vue from 'vue'
 // import Router from 'vue-router'
 import Home from './home' //路由模块
-import Base from './base' //路由模块
-import Dad from './dad' //路由模块
+import Base from './base' 
+import Dad from './dad' 
+import TodoList from './todolist'
+import High from './high'
 
 // Vue.use(Router)
 
@@ -25,9 +27,9 @@ function mergeArray() {
           newArray.push(sArray[j]);
       }
   }
-  console.log(arguments);
-  console.log(newArray);
+  // console.log(arguments);
+  // console.log(newArray);
   return newArray
 }
 
-export default mergeArray(Dad,Base,Home) //名字依次添加在最前面
+export default mergeArray(High,TodoList,Dad,Base,Home) //名字依次添加在最前面

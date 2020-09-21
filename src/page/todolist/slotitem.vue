@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    model
-    
-  
-
-   
+      <header>
+          <slot>22222</slot>
+      </header>
+      
   </div>
 </template>
 
@@ -19,9 +18,7 @@ export default {
   
   
   methods:{
-    // add1(){
-    //   this.num++;
-    // },
+    
   }
 }
 </script>
