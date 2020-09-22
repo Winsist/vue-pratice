@@ -6,6 +6,7 @@ import Base from './base'
 import Dad from './dad' 
 import TodoList from './todolist'
 import High from './high'
+import Vuexx from './vuexx'
 
 // Vue.use(Router)
 
@@ -32,4 +33,4 @@ function mergeArray() {
   return newArray
 }
 
-export default mergeArray(High,TodoList,Dad,Base,Home) //名字依次添加在最前面
+export default mergeArray(Vuexx,High,TodoList,Dad,Base,Home) //名字依次添加在最前面

@@ -22,7 +22,14 @@ export default {
     }
   },
   
-  
+  mounted(){
+    console.log('nexttick mounted');
+
+  },
+  destroyed(){
+    console.log('nexttick destroyed');
+
+  },
   methods:{
       addItem(){
           this.arr.push(`${Date.now()}`);
