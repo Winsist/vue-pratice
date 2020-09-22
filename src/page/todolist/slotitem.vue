@@ -1,8 +1,21 @@
 <template>
   <div id="app">
+    <!-- 基本使用 -->
       <header>
-          <slot>22222</slot>
+          <slot :user="user">{{user.firstName}}</slot>
       </header>
+      <!-- <div class="container">
+        <header>
+          
+          <slot name="header"></slot>
+        </header>
+        <main>
+          <slot></slot>
+        </main>
+        <footer>
+          <slot name="footer"></slot>
+        </footer>
+      </div> -->
       
   </div>
 </template>
@@ -12,6 +25,10 @@ export default {
 
   data(){
     return {
+      user:{
+        firstName:'mengyun',
+        lastName:'wang'
+      }
       
     }
   },
