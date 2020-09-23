@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  
+      <div id="app">
     <header>
           练习vuex
     </header>
@@ -10,6 +11,7 @@
 
    
   </div>
+
 </template>
 
 <script>

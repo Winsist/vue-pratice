@@ -1,5 +1,7 @@
 <template>
+
   <div id="app">
+    <keep-alive>
     <!-- <div @click="add1">+1</div>
     <div @click="add2">+2</div>
     <div @click="add3(333,$event)">+3</div>
@@ -20,7 +22,9 @@
   
 
     <router-view />
+     </keep-alive>
   </div>
+   
 </template>
 
 <script>

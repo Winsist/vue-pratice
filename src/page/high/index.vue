@@ -54,9 +54,11 @@ export default {
     console.log('index destroyed');
 
   },
-  activited(){
+  
+  activated(){
+        this.city='杭州'
 
-  },
+    },
   methods:{
       changeActive(){
         //   this.flag='active'
