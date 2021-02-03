@@ -14,6 +14,9 @@
       <button @click="gonextTick">去nextTick</button>
       <button @click="goVuex">练习VUEX</button>
       <button @click="goThings">练习事件委托</button>
+      <button @click="goComputed">学习computed</button>
+      <button @click="goWatch">学习watch</button>
+      <button @click="goClass">学习class</button>
 
   </div>
 </template>
@@ -57,7 +60,17 @@ export default {
         },
         goThings(){
             this.$router.push('/base/model')
-        }
+        },
+        goComputed(){
+            this.$router.push('/computed-demo/index')
+        },
+        goWatch(){
+            this.$router.push('/watch-demo/index')
+        },
+        goClass(){
+            this.$router.push('/class-demo/index')
+        },
+
     }
 }
 </script>

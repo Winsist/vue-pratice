@@ -4,7 +4,7 @@
     <div>
         {{list}}
     </div>
-    <div @click.right="goDad">点击改变父亲的标题</div>
+    <div @click.right="goDad">右键点击改变父亲的标题</div>
     
 
     <router-view />
