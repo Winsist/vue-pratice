@@ -22,12 +22,10 @@ export default {
         info:{
             age:18
         }
-        
-      
     }
   },
   watch:{
-      num(newVal,oldVal){
+      num(newVal,oldVal){ 
           console.log(newVal+'------'+oldVal)
       },
     //   'info.age':function(newVal,oldVal){

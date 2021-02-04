@@ -17,6 +17,7 @@
       <button @click="goComputed">学习computed</button>
       <button @click="goWatch">学习watch</button>
       <button @click="goClass">学习class</button>
+      <button @click="goEvent">学习event事件</button>
 
   </div>
 </template>
@@ -69,6 +70,9 @@ export default {
         },
         goClass(){
             this.$router.push('/class-demo/index')
+        },
+        goEvent(){
+            this.$router.push('/event-demo/index')
         },
 
     }

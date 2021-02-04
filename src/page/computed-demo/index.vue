@@ -30,6 +30,7 @@ export default {
   },
   computed:{
       num1(){ 
+        console.log(1);
         return this.a+'-'+this.b
       },
       num2:{
