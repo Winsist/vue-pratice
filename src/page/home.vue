@@ -13,6 +13,8 @@
       <button @click="goSelf">去验证自定义事件</button>
       <button @click="gonextTick">去nextTick</button>
       <button @click="goVuex">练习VUEX</button>
+      <button @click="goThings">练习事件委托</button>
+
   </div>
 </template>
 
@@ -52,6 +54,9 @@ export default {
         },
         goVuex(){
             this.$router.push('/vuexx/index')
+        },
+        goThings(){
+            this.$router.push('/base/model')
         }
     }
 }
