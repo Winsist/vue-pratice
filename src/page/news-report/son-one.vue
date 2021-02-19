@@ -18,7 +18,7 @@ export default {
     };
   },
   mounted(){//因为有时不确定何时会触发事件，一般会在 mounted 或 created 钩子中来监听
-      eventbus.$on('say2',msg2=>{
+      eventbus.$on('say1',msg2=>{
           this.msg2 = msg2
       })
 
