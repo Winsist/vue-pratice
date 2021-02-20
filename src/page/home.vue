@@ -17,6 +17,7 @@
     <button @click="goEvent">学习event事件</button>
     <button @click="goForm">学习form表单</button>
     <button @click="goNewsReport">学习组件之间的通讯</button>
+    <button @click="goHigh">学习高级特性</button>
   </div>
 </template>
 
@@ -76,6 +77,9 @@ export default {
     },
     goNewsReport(){
         this.$router.push("/news-report/index");
+    },
+    goHigh(){
+      this.$router.push("/high-demo/index");
     }
   }
 };
