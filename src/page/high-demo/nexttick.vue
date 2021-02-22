@@ -31,6 +31,7 @@ export default {
   methods:{
       addItem(){
           this.arr.push(`${Date.now()}`);
+          this.arr.push(`${Date.now()}`);
           //获取dom
         //   this.$nextTick(()=>{
             const ulEle = this.$refs.ul1;

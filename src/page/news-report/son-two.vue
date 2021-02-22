@@ -4,7 +4,6 @@
     <div>嘻嘻嘻嘻，我是弟弟</div>
     <div>哥哥对我说:{{msg1}}</div>
     <button @click="sayOne">对哥哥说</button>
-
   </div>
 </template>
 
@@ -22,7 +21,6 @@ export default {
       eventbus.$on('say2',msg1=>{
           this.msg1 = msg1
       })
-
   },
   methods: {
       sayOne(){
@@ -30,9 +28,9 @@ export default {
 
       }
   },
-  // beforeDestroy(){
-  //   eventbus.$off('say2')
-  // }
+  beforeDestroy(){
+    eventbus.$off('say2')
+  }
 };
 </script>
 <style scoped>

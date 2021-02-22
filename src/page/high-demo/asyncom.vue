@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>slot</h1>
+    <h1>异步组件</h1>
     
   </div>
 </template>
