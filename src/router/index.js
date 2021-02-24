@@ -5,7 +5,7 @@ import Home from './home' //路由模块
 import Base from './base' 
 import Dad from './dad' 
 import TodoList from './todolist'
-import High from './high'
+// import High from './high'
 import Vuexx from './vuexx'
 
 import ComputedDemo from './computed-demo'
@@ -41,4 +41,4 @@ function mergeArray() {
   return newArray
 }
 
-export default mergeArray(HighDemo,NewsReport,FormDemo,EventDemo,ClassDemo,WatchDemo,ComputedDemo,Vuexx,High,TodoList,Dad,Base,Home) //名字依次添加在最前面
+export default mergeArray(HighDemo,NewsReport,FormDemo,EventDemo,ClassDemo,WatchDemo,ComputedDemo,Vuexx,TodoList,Dad,Base,Home) //名字依次添加在最前面
