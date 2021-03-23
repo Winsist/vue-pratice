@@ -18,6 +18,7 @@
     <button @click="goForm">学习form表单</button>
     <button @click="goNewsReport">学习组件之间的通讯</button>
     <button @click="goHigh">学习高级特性</button>
+    <button @click="goMyVmodel">学习自定义指令</button>
   </div>
 </template>
 
@@ -80,6 +81,9 @@ export default {
     },
     goHigh(){
       this.$router.push("/high-demo/index");
+    },
+    goMyVmodel(){
+      this.$router.push("/high-demo/myvmodel");
     }
   }
 };

@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="high">
       <h1>高级特性</h1>
       <button @click="goPage('Model')">自定义v-model</button>
       <button @click="goPage('NextTick')">nextTick</button>
       <button @click="goPage('SlotIndex')">slot插槽</button>
       <button @click="goPage('ActiveCom')">动态组件</button>
       <button @click="goPage('AsynCom')">异步组件</button>
-      <button @click="goPage('MyMixin')">mixin混入</button>
+      <button class="unique" @click="goPage('MyMixin')">mixin混入</button>
 
   </div>
 </template>
@@ -43,7 +43,9 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style  scoped>
+
+
    
 
 </style>

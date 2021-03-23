@@ -5,6 +5,7 @@ import SlotIndex from '../page/high-demo/slot-index'
 import ActiveCom from '../page/high-demo/activecom'
 import AsynCom from '../page/high-demo/asyncom'
 import MyMixin from '../page/high-demo/mymixin'
+import MyVmodel from '../page/high-demo/myvmodel'
 
 export default [{
     path:"/high-demo/index",
@@ -34,4 +35,8 @@ export default [{
     path:"/high-demo/mymixin",
     name:MyMixin,
     component:MyMixin
+},{
+    path:"/high-demo/myvmodel",
+    name:MyVmodel,
+    component:MyVmodel
 }]
