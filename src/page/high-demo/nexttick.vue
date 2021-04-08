@@ -38,6 +38,8 @@ export default {
             ulEle.style.background='red';
             console.log(ulEle);
             console.log(ulEle.childNodes.length);//第一次点击打印3，期望值是4，也就是说此时dom还没有渲染
+            //在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。
+            //使用场景：例：一个子组件通过v-if控制隐藏显示<t v-if='show'><t/>，当修改完显示状态后，立马通过ref去操作子组件的方法，这个时候会报错，原因在于子组件此时可能还未渲染完成，这个时候使用nextTick可以解决，他会在dom更新完成之后再去调用
 
         //   })
         //   const ulEle = this.$refs.ul1;
