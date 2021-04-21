@@ -12,7 +12,9 @@ export default {
         todoItem:''
     };
   },
-
+  created(){
+    console.log('input我刷新了')
+  },
   methods: {
       add(){
           this.$emit("add",this.todoItem);

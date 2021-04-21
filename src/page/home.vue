@@ -65,7 +65,12 @@ export default {
       this.$router.push("/computed-demo/index");
     },
     goWatch() {
-      this.$router.push("/watch-demo/index");
+      this.$router.push({
+        name:"WatchDemo",
+        params:{
+          id:1
+        }
+      });
     },
     goClass() {
       this.$router.push("/class-demo/index");

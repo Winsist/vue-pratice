@@ -8,6 +8,9 @@
       <div @click="add">
           add
       </div>
+      <div>
+        {{id}}
+      </div>
     
     
   </div>
@@ -21,7 +24,8 @@ export default {
         num:1,
         info:{
             age:18
-        }
+        },
+        id:this.$route.params.id
     }
   },
   watch:{
@@ -33,14 +37,17 @@ export default {
     //   }
     info:{
         handler(newVal,oldVal){
-            console.log(newVal.age+'------'+oldVal.age);//两次的值一样，因为引用类型拿不到oldVal
+            // console.log(newVal.age+'------'+oldVal.age);//两次的值一样，因为引用类型拿不到oldVal
+            console.log(111)
         },
-        deep:true
+        deep:true,
+        immediate:true,//如果我们需要在最初绑定值的时候也执行监听函数handler
     }
   },
   methods:{
     add(){
-        this.info.age++
+        this.info.age++;
+        console.log(null == undefined);//true
     }
   }
 }
