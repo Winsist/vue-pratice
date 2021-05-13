@@ -2,6 +2,6 @@ import Home from '../page/home'
 
 
 export default [{
-    path:"/home",
+    path:"/",
     component:Home
 }]
